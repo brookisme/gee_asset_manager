@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='geebam',
-    version='0.1.0',
+    version='0.1.1',
     packages=['geebam'],
     package_dir={'geebam':
                  'geebam'},

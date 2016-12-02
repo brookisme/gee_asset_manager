@@ -27,7 +27,7 @@ def __delete_recursive(asset_path):
 
 def __get_full_path(asset_id):
     full_id = asset_id
-    if 'users' not in asset_id:
+    if ('users' not in asset_id) and ('projects' not in asset_id):
         root_path_in_gee = ee.data.getAssetRoots()[0]['id']
         full_id = root_path_in_gee + '/' + asset_id
     if not ee.data.getInfo(full_id):
